@@ -1,0 +1,42 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 px;
+  text-align: center;
+}
+
+h1{
+  color: yellow;
+}
+
+
+.bg-red {
+  background-color: rgb(238, 5, 5);
+}
+
+.font-pokemon{
+  font-family: 'Pokemon Solid', sans-serif;
+                                                
+}
+
+.nav-item{
+  padding-left: 20px;
+  
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px
+}
+
+.box{
+  border:  1px solid  black;
+  cursor: pointer;
+}
+
+
+.container img{
+  height: 200px;
+  width: 180px;
+}

@@ -1,0 +1,16 @@
+:root{
+  padding: 0px;
+  margin: 0px;
+}
+
+
+.active {
+  color: rgb(14, 14, 14);
+  text-decoration: none;
+  }
+
+a{
+  text-decoration: none;
+  color: white;
+}
+  
