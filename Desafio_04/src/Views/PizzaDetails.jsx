@@ -1,4 +1,3 @@
-// PizzaDetail.js
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -15,7 +14,7 @@ const PizzaDetails = () => {
         }
         const data = await response.json();
         const pizza = data.find((pizza) => pizza.id === id);
-        console.log(pizza);
+        
         if (pizza) {
           setPizzaDetails(pizza);
         } else {
@@ -44,13 +43,13 @@ const PizzaDetails = () => {
 
           <div className="w-2/3 p-4" style={{ maxWidth: "600px" }}>
             <h1 className="text-xl font-bold mb-2">
-              {pizzaDetails?.name.charAt(0).toUpperCase() +
-                pizzaDetails?.name.slice(1)}
+              {pizzaDetails.name.charAt(0).toUpperCase() +
+                pizzaDetails.name.slice(1)}
             </h1>
             <p className="text-l mb-4">{pizzaDetails?.desc}</p>
             <div className="border-b-2 border-gray-200 w-30 mx-auto mt-4"></div>
             <p className="text-md mt-2 font-semibold mb-2">Ingredientes:</p>
-            {pizzaDetails?.ingredients?.map((ingredient, index) => (
+            {pizzaDetails.ingredients.map((ingredient, index) => (
               <div
                 key={index}
                 className="ingredientList  p-1 pl-5 flex items-center"

@@ -18,7 +18,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./pizzas.json');
+        const response = await fetch('/pizzas.json');
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -51,7 +51,7 @@ const Home = () => {
                 <p className="text-md mt-2 font-semibold mb-2">Ingredientes:</p>
                 {pizza.ingredients.map((ingredient, index) => (
                   <div key={index} className="ingredientList  p-1 pl-5 flex items-center">
-                    <img src="./Icons/pizza.png" alt="pizza" className="mr-2" />
+                    <img src="/Icons/pizza.png" alt="pizza" className="mr-2" />
                     <p className="text-sm ">{ingredient}</p>
                   </div>
                 ))}
